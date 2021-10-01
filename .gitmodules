@@ -1,0 +1,3 @@
+[submodule "axis_camera"]
+	path = axis_camera
+	url = git@github.com:ARG-NCTU/axis_camera.git
