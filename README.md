@@ -6,7 +6,7 @@ The repo is used for the arg sensor tower.
 
 ## Hardware Setup
 
-- Sensor tower No.1
+### Sensor tower No.1
     - axis camera
     - mmwave serial num:
         - 00AB4C1B
@@ -14,7 +14,7 @@ The repo is used for the arg sensor tower.
         - 00AB4C8E
         - 00AB4D23
 
-- Sensor tower No.2
+### Sensor tower No.2
     - axis camera
     - XXX GPS (low cost)
     - mmwave serial num:
@@ -23,7 +23,7 @@ The repo is used for the arg sensor tower.
         - 00AB4D33
         - 00789BDA
 
-- Sensor tower No.3
+### Sensor tower No.3
     - DreamVu PAL_USB (360 camera)
     - XXX GPS (low cost)
     - mmwave serial num:
@@ -32,7 +32,7 @@ The repo is used for the arg sensor tower.
         - 00789E0C
         - 00AB4CE2
 
-- Sensor tower N0.4
+### Sensor tower N0.4
     - DreamVu PAL_USB (360 camera)
     - XXX GPS (low cost)
     - Microstrain IMU
@@ -42,7 +42,7 @@ The repo is used for the arg sensor tower.
         - 00789D2E
         - 00AB4C0E
 
-- Sensor tower No.5
+### Sensor tower No.5
     - logitech webcam
     - XXX GPS (low cost)
     - mmwave serial num:
@@ -51,5 +51,5 @@ The repo is used for the arg sensor tower.
         - 00789BD3
         - 00789C3F
 
-- Sensor tower No.6
-    - TODO
+### Sensor tower No.6
+    TODO
