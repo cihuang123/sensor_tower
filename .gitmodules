@@ -4,3 +4,6 @@
 [submodule "velodyne"]
 	path = velodyne
 	url = https://github.com/wellyowo/velodyne.git
+[submodule "zed-ros-wrapper"]
+	path = zed-ros-wrapper
+	url = git@github.com:cihuang123/zed-ros-wrapper.git
