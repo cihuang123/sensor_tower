@@ -1,0 +1,23 @@
+SUBSYSTEMS=="usb", ATTRS{manufacturer}=="Prolific Technology Inc. ", MODE="0666", SYMLINK+="husky_controller"
+SUBSYSTEM=="tty", SUBSYSTEMS=="usb", ATTRS{product}=="USB2.0-Ser!" MODE="0666", SYMLINK+="husky_controller"
+
+SUBSYSTEM=="tty", SUBSYSTEMS=="usb", ATTRS{manufacturer}=="Lord Microstrain", MODE="0666", SYMLINK+="ttyIMU"
+
+SUBSYSTEMS=="usb", ATTRS{manufacturer}=="Silicon Labs", ENV{SERIAL}="%s{serial}"
+SUBSYSTEMS=="usb", ATTRS{interface}=="Enhanced Com Port", MODE="0666", SYMLINK+="mm_$env{SERIAL}_0"
+SUBSYSTEMS=="usb", ATTRS{interface}=="Standard Com Port", MODE="0666", SYMLINK+="mm_$env{SERIAL}_1"
+
+SUBSYSTEM=="tty", ATTRS{manufacturer}=="Arduino (www.arduino.cc)", ATTRS{serial}=="956353330313519101B0", MODE="0777", SYMLINK+="anchor_arduino"
+SUBSYSTEM=="tty", ATTRS{manufacturer}=="Arduino (www.arduino.cc)", ATTRS{serial}=="95635333131351F0A051", MODE="0777", SYMLINK+="anchor_arduino"
+
+SUBSYSTEM=="tty", SUBSYSTEMS=="usb", ATTRS{serial}=="AH06NI9L", MODE="0777", SYMLINK+="co2_sensor"
+SUBSYSTEM=="tty", SUBSYSTEMS=="usb", ATTRS{serial}=="AH06NIDP", MODE="0777", SYMLINK+="co2_sensor"
+
+SUBSYSTEMS=="usb", ATTRS{serial}=="64696", MODE="0777", SYMLINK+="husky1_camera_right_thermal"
+SUBSYSTEMS=="usb", ATTRS{serial}=="10691", MODE="0777", SYMLINK+="husky1_camera_middle_thermal"
+SUBSYSTEMS=="usb", ATTRS{serial}=="64144", MODE="0777", SYMLINK+="husky2_camera_right_thermal"
+
+
+SUBSYSTEM=="tty", ATTRS{manufacturer}=="FTDI", MODE="0777", SYMLINK+="ftdi_%s{serial}"
+
+SUBSYSTEMS=="usb", ATTRS{manufacturer}=="Pozyx Labs", MODE="0777"

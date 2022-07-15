@@ -24,8 +24,8 @@ MMmapping::MMmapping(){
 
 	trans0 = get_transfrom("mmwave_right_link");
 	trans1 = get_transfrom("mmwave_left_link");
-	trans2 = get_transfrom("mmwave_right_link_back");
-	trans3 = get_transfrom("mmwave_left_link_back");
+	trans2 = get_transfrom("mmwave_right_back_link");
+	trans3 = get_transfrom("mmwave_left_back_link");
 
     pc_map = nh.advertise<sensor_msgs::PointCloud2> ("mmwave_mapping", 10);
 	pc_sub0 = nh.subscribe("radar_0/ti_mmwave/ti_mmwave/radar_scan_pcl", 1, &MMmapping::pc0_callback, this);

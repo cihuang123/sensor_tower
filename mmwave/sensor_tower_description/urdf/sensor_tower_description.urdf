@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="sensor_tower_description">
+  <link
+    name="sensor_tower_link">
+    <inertial>
+      <origin
+        xyz="-0.0168694606432581 3.46944695195361E-17 0.112890450283758"
+        rpy="0 0 0" />
+      <mass
+        value="0.341322335007201" />
+      <inertia
+        ixx="0.00364411904163728"
+        ixy="-2.04820710478793E-18"
+        ixz="-1.31182734805422E-21"
+        iyy="0.00158707119592865"
+        iyz="4.39166807750312E-19"
+        izz="0.00522984911415873" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sensor_tower_description/meshes/sensor_tower_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sensor_tower_description/meshes/sensor_tower_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="mmwave_left_link">
+    <inertial>
+      <origin
+        xyz="-0.00304848867754498 0.0204580697768618 -0.0437586529080803"
+        rpy="0 0 0" />
+      <mass
+        value="0.0167468878642834" />
+      <inertia
+        ixx="7.84058393424274E-06"
+        ixy="2.08485659336723E-07"
+        ixz="-6.86783973489677E-08"
+        iyy="2.51901574916046E-06"
+        iyz="-4.63618000264675E-07"
+        izz="7.29994263842275E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sensor_tower_description/meshes/mmwave_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sensor_tower_description/meshes/mmwave_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mmwave_left_joint"
+    type="fixed">
+    <origin
+      xyz="0.10905 0.1179 0.198"
+      rpy="0 0 0.7854" />
+    <parent
+      link="sensor_tower_link" />
+    <child
+      link="mmwave_left_link" />
+    <axis
+      xyz="0.70711 -0.70711 0" />
+  </joint>
+  <link
+    name="mmwave_right_link">
+    <inertial>
+      <origin
+        xyz="-0.00304848867754492 0.0204580697768619 -0.0437586529080803"
+        rpy="0 0 0" />
+      <mass
+        value="0.0167468878642835" />
+      <inertia
+        ixx="7.84058393424275E-06"
+        ixy="2.08485659336722E-07"
+        ixz="-6.86783973489692E-08"
+        iyy="2.51901574916047E-06"
+        iyz="-4.63618000264677E-07"
+        izz="7.29994263842275E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sensor_tower_description/meshes/mmwave_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sensor_tower_description/meshes/mmwave_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mmwave_right_joint"
+    type="fixed">
+    <origin
+      xyz="0.082886 -0.14406 0.198"
+      rpy="0 0 -0.7854" />
+    <parent
+      link="sensor_tower_link" />
+    <child
+      link="mmwave_right_link" />
+    <axis
+      xyz="0.70711 0.70711 0" />
+  </joint>
+  <link
+    name="mmwave_left_back_link">
+    <inertial>
+      <origin
+        xyz="-0.00304848867754509 0.0204580697768619 -0.0437586529080803"
+        rpy="0 0 0" />
+      <mass
+        value="0.0167468878642835" />
+      <inertia
+        ixx="7.84058393424276E-06"
+        ixy="2.08485659336725E-07"
+        ixz="-6.86783973489698E-08"
+        iyy="2.51901574916047E-06"
+        iyz="-4.63618000264681E-07"
+        izz="7.29994263842277E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sensor_tower_description/meshes/mmwave_left_back_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sensor_tower_description/meshes/mmwave_left_back_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mmwave_left_back_joint"
+    type="fixed">
+    <origin
+      xyz="0.008485 0.16025 0.198"
+      rpy="0 0 1.5708" />
+    <parent
+      link="sensor_tower_link" />
+    <child
+      link="mmwave_left_back_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="mmwave_right_back_link">
+    <inertial>
+      <origin
+        xyz="-0.00304848867754499 0.0204580697768618 -0.0437586529080803"
+        rpy="0 0 0" />
+      <mass
+        value="0.0167468878642835" />
+      <inertia
+        ixx="7.84058393424275E-06"
+        ixy="2.08485659336724E-07"
+        ixz="-6.86783973489701E-08"
+        iyy="2.51901574916047E-06"
+        iyz="-4.63618000264677E-07"
+        izz="7.29994263842275E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sensor_tower_description/meshes/mmwave_right_back_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sensor_tower_description/meshes/mmwave_right_back_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mmwave_right_back_joint"
+    type="fixed">
+    <origin
+      xyz="-0.028515 -0.16025 0.198"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="sensor_tower_link" />
+    <child
+      link="mmwave_right_back_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>
